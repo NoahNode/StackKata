@@ -3,7 +3,7 @@ public class Stack {
     private int size = 0;
 
     public boolean isEmpty() {
-        return isEmpty;
+        return size == 0;
     }
 
     public void push(Object objectToPush) {

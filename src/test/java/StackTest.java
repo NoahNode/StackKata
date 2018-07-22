@@ -31,5 +31,17 @@ public class StackTest {
         assertEquals(2, notEmptyStack.size());
     }
 
+    @Test
+    public void testPop(){
+        Stack stack = new Stack(2);
+
+        stack.push("String");
+        stack.push("String 2");
+
+        assertEquals("String 2", stack.pop());
+        assertEquals("String", stack.pop());
+        assertEquals(null, stack.pop());
+    }
+
 
 }
